@@ -1,0 +1,15 @@
+body {
+    padding-top: 80px;
+  }
+  
+.box{
+  background-color: black;
+  color: white;
+}
+
+.box:hover{
+  background-color: gainsboro;
+}
+.box:active{
+  background-color: gainsboro;
+}

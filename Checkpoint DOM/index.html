@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="fKochti.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Firas Kochti Shopping Cart</title>
+</head>
+
+<body onload="tots()" >  <!-- houni bich ye7seb el prix total diretcment  -->
+
+    <h1>My Shopping Cart </h1>
+    <hr>
+    <table id="cart" border="1" >
+
+        <tr>
+            <td>  </td>
+            <td> Product Name </td>
+            <td> Price (Dt) </td>
+            <td> Quantity </td>
+            <td> Total Price (Dt) </td>
+            <td> </td>
+        </tr>
+
+        <tr id='tr_coca' >
+            <td> <img width="50" src="https://www.marketing-professionnel.fr/wp-content/uploads/2010/01/coca-cola-logo.jpg"> </td>
+            <td> Coca Cola</td>
+            <td> <p id="p_coca">4</p></td>
+            <td> <i id='coca' class="box" onclick="down(this)" > - </i> <span id="q_coca" > 1 </span> <i id='coca' onclick="up(this)" class="box" > + </i> </td>
+            <td> <span id="p_t_coca" > 4 </span> </td>
+            <td> 
+                <i id='coca' onclick="remove(this)" style="color: red;" class="fa fa-remove"></i>  
+                |
+                <i onclick="like(this)" style="color:grey;" class="fa fa-heart"></i>  
+            </td> 
+        </tr>
+
+        <tr id='tr_fanta' >
+            <td> <img width="50" src="https://i1.wp.com/blog.shanegraphique.com/wp-content/uploads/2016/07/01-13.jpg"> </td>
+            <td> Fanta </td>
+            <td> <p id="p_fanta">3.6</p></td>
+            <td> <i id='fanta' class="box" onclick="down(this)" > - </i> <span id="q_fanta" > 1 </span> <i id='fanta' onclick="up(this)" class="box" > + </i> </td>
+            <td> <span id="p_t_fanta" > 3.6 </span> </td>
+            <td>
+                <i id='fanta' onclick="remove(this)" style="color: red;" class="fa fa-remove"></i>  
+                |
+                <i onclick="like(this)" style="color:grey;" class="fa fa-heart"></i>  
+            </td> 
+        </tr>
+
+    </table>
+
+    <div style="display: flex; " >
+        <h3>Total Panier :</h3> 
+        <h4 style="color: red;" > <span id='tots' > X </span> Dt </h4>
+    </div>
+
+
+    <script src="fKochti.js"></script>
+</body>
+
+</html>
